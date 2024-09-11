@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "index.html#why",
+    "href": "index.html#why",
+    "title": "",
+    "section": "Why?",
+    "text": "Why?\nCreative visualizations stand out\nEmotional connection, engagement\nBetter and more clear communication*\n\nMy talk is about creative visualizations but you may ask, why?\nmaking the plot more resonant and memorable, retain information better"
+  },
+  {
+    "objectID": "index.html#why-1",
+    "href": "index.html#why-1",
+    "title": "",
+    "section": "Why?",
+    "text": "Why?\nSelf-expression\n\nMy feeling is that when most people talk about creativity what they actually mean is having a personal style, unique, productive"
+  },
+  {
+    "objectID": "index.html#creativity",
+    "href": "index.html#creativity",
+    "title": "",
+    "section": "Creativity",
+    "text": "Creativity\n\n\n\nNovelty\nUseful solutions\nTransform or synthesize\n\n\n\nConnecting seemingly unrelated concepts\n\n\n\n\n\n\n\n\n\n\n\nMany definitions\nfrom the definition of humor: a sense of surprise"
+  },
+  {
+    "objectID": "index.html#r-and-ggplot2",
+    "href": "index.html#r-and-ggplot2",
+    "title": "",
+    "section": "R and ggplot2",
+    "text": "R and ggplot2\n\n\nProgramming language\n\n\nGrammar of Graphics\nFlexible and customizable\nggplot2 extensions\n\n\n\n\n\n\n\n\nBeing creative is not about the tools but R/ggplot2 have some advantages Since we’re at posit::conf, we’re going to talk about the tools we use!\nhttps://r.qcbs.ca/workshop03/book-en/grammar-of-graphics-gg-basics.html https://exts.ggplot2.tidyverse.org/gallery/"
+  },
+  {
+    "objectID": "index.html#agenda",
+    "href": "index.html#agenda",
+    "title": "",
+    "section": "Agenda",
+    "text": "Agenda\nFinding inspiration\n- Exercices\nGetting creative with code\n- Exercices\nMaking it personal\n- Exercices\nQ&A\n\nWe’ll look at some tips, how we can make the process easier, all the way from the start to the end, and we’re breaking it down to 3 parts"
+  },
+  {
+    "objectID": "index.html#look-at-other-peoples-work",
+    "href": "index.html#look-at-other-peoples-work",
+    "title": "",
+    "section": "Look at other people’s work",
+    "text": "Look at other people’s work\n\n\nDissect their choices\nImitate style or techniques\nRemix\n\nThe most obvious"
+  },
+  {
+    "objectID": "index.html#try-out-new-packages",
+    "href": "index.html#try-out-new-packages",
+    "title": "",
+    "section": "Try out new packages",
+    "text": "Try out new packages\n\nSocial media\nBlogs\nNewsletters\n…"
+  },
+  {
+    "objectID": "index.html#look-into-charts-typically-used-in-other-fields",
+    "href": "index.html#look-into-charts-typically-used-in-other-fields",
+    "title": "",
+    "section": "Look into charts typicallyused in other fields",
+    "text": "Look into charts typicallyused in other fields\n\n\nShift perspective\nGo through the packages at different CRAN Task Views and search for ggplot2 packages https://cran.r-project.org/web/views/"
+  },
+  {
+    "objectID": "index.html#sketch-before-coding",
+    "href": "index.html#sketch-before-coding",
+    "title": "",
+    "section": "Sketch before coding",
+    "text": "Sketch before coding\n\n\nAnalog/Digital Spend 5-10 minutes to sketch out some ideas I get “locked” when I code"
+  },
+  {
+    "objectID": "index.html#break-the-rules",
+    "href": "index.html#break-the-rules",
+    "title": "",
+    "section": "Break the rules",
+    "text": "Break the rules\n\n\nDeliberately try to break the rules\nI did it a lot in the beginning but not intentionally, I didn’t know the rules"
+  },
+  {
+    "objectID": "index.html#try-generative-or-data-art",
+    "href": "index.html#try-generative-or-data-art",
+    "title": "",
+    "section": "Try generative or data art",
+    "text": "Try generative or data art\n\n\n\n\n\nDanielle Navarro\n\n\n\n\n\n\nMeTooMentum by Valentina D’Efilippo"
+  },
+  {
+    "objectID": "index.html#ask-an-llm",
+    "href": "index.html#ask-an-llm",
+    "title": "",
+    "section": "Ask an LLM",
+    "text": "Ask an LLM"
+  },
+  {
+    "objectID": "index.html#look-at-other-peoples-work-1",
+    "href": "index.html#look-at-other-peoples-work-1",
+    "title": "",
+    "section": "1/5 Look at other people’s work",
+    "text": "1/5 Look at other people’s work\nOn the next slide, choose a visualization that you like. Then, spend a couple minutes to think:\nWhy do you like it? (Style, colors, emotional response,…)\nHow did they make it? (What kind of chart is it? If it were a ggplot, which geoms would you use to make it?)"
+  },
+  {
+    "objectID": "index.html#try-out-new-packages-1",
+    "href": "index.html#try-out-new-packages-1",
+    "title": "",
+    "section": "2/5 Try out new packages",
+    "text": "2/5 Try out new packages\nNote how different charts convey different messages about the same data.\n\n\n\nggplot(diamonds, aes(cut, fill = cut)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n\n\nggplot(diamonds %&gt;% count(cut), aes(area = n, label = cut, fill = cut)) +\n  geom_treemap() +\n  geom_treemap_text(color = \"white\")"
+  },
+  {
+    "objectID": "index.html#search-in-other-fields",
+    "href": "index.html#search-in-other-fields",
+    "title": "",
+    "section": "3/5 Search in other fields",
+    "text": "3/5 Search in other fields\nGo to CRAN Task Views and pick a topic unrelated to your work or interests. Search for plot or visualiz in that topic, in order to find packages you could use. Then, go to a package’s vignette or documentation to find plot examples. How might you adapt them to your own data or work?"
+  },
+  {
+    "objectID": "index.html#break-the-rules-1",
+    "href": "index.html#break-the-rules-1",
+    "title": "",
+    "section": "4/5 Break the rules",
+    "text": "4/5 Break the rules\nA common rule in data visualization is:\n\nMapping a single variable to multiple aesthetics is redundant. Because it is redundant information, in most cases avoid mapping a single variable to multiple aesthetics.\n(R for Data Science: Exercise Solutions)\n\nWhy do you think this rule is usually recommended? Take a moment to think about it, then continue to the next slide."
+  },
+  {
+    "objectID": "index.html#ask-an-llm-1",
+    "href": "index.html#ask-an-llm-1",
+    "title": "",
+    "section": "5/5 Ask an LLM",
+    "text": "5/5 Ask an LLM\n\nGive me 5 ideas for a creative data visualization of the mpg dataset in ggplot2\n\n\nTest this or a similar prompt with your favorite LLM or Copilot (free, no account needed)"
+  },
+  {
+    "objectID": "index.html#end-of-exercises",
+    "href": "index.html#end-of-exercises",
+    "title": "",
+    "section": "End of exercises",
+    "text": "End of exercises\nShare any of the following in the chat, or take a break!\nA visualization you liked, write why you like it\nA new package you would like to try and why\nDid your LLM come up with any good ideas?"
+  },
+  {
+    "objectID": "index.html#look-at-other-peoples-code",
+    "href": "index.html#look-at-other-peoples-code",
+    "title": "",
+    "section": "Look at other people’s code",
+    "text": "Look at other people’s code\n\n\nCommon in the R community to share your code If you see something you like, look at the code"
+  },
+  {
+    "objectID": "index.html#recreate-data-visualizations-made-with-other-tools",
+    "href": "index.html#recreate-data-visualizations-made-with-other-tools",
+    "title": "",
+    "section": "Recreate data visualizationsmade with other tools",
+    "text": "Recreate data visualizationsmade with other tools\nSimilar to remixing but here the goal is to make a “copy” of the original\n\nSimilar to remixing, but this is more of an exercise, you have a goal and you have to come up with solutions\nMy favorite thing to do, great way to learn!!"
+  },
+  {
+    "objectID": "index.html#try-to-break-things",
+    "href": "index.html#try-to-break-things",
+    "title": "",
+    "section": "Try to break things",
+    "text": "Try to break things\nTry out different options in ggplot2 functions\nGet to know your tool\n\nGet to know your tool\nTry options and see how it affects your plot\nTry extreme values, very thick lines, huge or tiny text, play with transparency, negative values\n(That’s how I found out about negative margins)"
+  },
+  {
+    "objectID": "index.html#use-geom_text",
+    "href": "index.html#use-geom_text",
+    "title": "",
+    "section": "Use geom_text()",
+    "text": "Use geom_text()\n\n\nText is direct, no need to look up symbols!\ngeom_text usually for labels, use it for mapping variables: you can play with font size, color, fonts\nI like text visualizations and I think they’re underused\ngeom_text with ggfx blend"
+  },
+  {
+    "objectID": "index.html#create-your-own-geoms",
+    "href": "index.html#create-your-own-geoms",
+    "title": "",
+    "section": "Create your own geoms",
+    "text": "Create your own geoms\n\n\nIf you want something more custom, you can code it. I’ve tried but never really succeeded, maybe you’ll have better luck"
+  },
+  {
+    "objectID": "index.html#use-ggplot_buildlayer_data",
+    "href": "index.html#use-ggplot_buildlayer_data",
+    "title": "",
+    "section": "Use ggplot_build()layer_data()",
+    "text": "Use ggplot_build()layer_data()\n\n\nA technique that I’ve been using the last year or so"
+  },
+  {
+    "objectID": "index.html#use-coord_radial",
+    "href": "index.html#use-coord_radial",
+    "title": "",
+    "section": "Use coord_radial()",
+    "text": "Use coord_radial()"
+  },
+  {
+    "objectID": "index.html#creative-use-of-geoms",
+    "href": "index.html#creative-use-of-geoms",
+    "title": "",
+    "section": "Creative use of geoms",
+    "text": "Creative use of geoms\n\n\nUse geoms beyond their intended use (off-label!)\nTry to see geoms not as chart but as building blocks or drawing tools. geom_point is not for scatterplots, it’s for drawing points"
+  },
+  {
+    "objectID": "index.html#participate-in-challenges",
+    "href": "index.html#participate-in-challenges",
+    "title": "",
+    "section": "Participate in challenges",
+    "text": "Participate in challenges\n\nExperiment\nLearn\nGet feedback\n\n\nShare online if you want to, low risk environment, R people are usually nice :)\nAll my plots in this talk are from TidyTuesday submissions"
+  },
+  {
+    "objectID": "index.html#try-to-break-ggplot",
+    "href": "index.html#try-to-break-ggplot",
+    "title": "",
+    "section": "1/4 Try to break ggplot",
+    "text": "1/4 Try to break ggplot\nTry out really big or negative values in functions. Use expressions in aes() to create on-the-fly variables. Use unconventional geoms, eg. geom_tile. Use coord_radial(). Use negative values in margins.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#creative-use-of-geoms-1",
+    "href": "index.html#creative-use-of-geoms-1",
+    "title": "",
+    "section": "2/4 Creative use of geoms",
+    "text": "2/4 Creative use of geoms\nRun the code to see the face. Use ggplot2 geoms to add a nose, pink cheeks, more eyes, or whatever you want. When you’re done, hover over the plot and download it!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#text-visualization",
+    "href": "index.html#text-visualization",
+    "title": "",
+    "section": "3/4 Text visualization",
+    "text": "3/4 Text visualization\nMap duration to size, party to color\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#recreate-visualizations-made-with-other-tools",
+    "href": "index.html#recreate-visualizations-made-with-other-tools",
+    "title": "",
+    "section": "4/4 Recreate visualizations made with other tools",
+    "text": "4/4 Recreate visualizations made with other tools\nRecreate this Excel chart (source).\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#end-of-exercises-1",
+    "href": "index.html#end-of-exercises-1",
+    "title": "",
+    "section": "End of exercises",
+    "text": "End of exercises\nShare the face you created or the recreation of the Excel chart\nTake a break!"
+  },
+  {
+    "objectID": "index.html#dont-use-the-defaults-colors-fonts-etc.",
+    "href": "index.html#dont-use-the-defaults-colors-fonts-etc.",
+    "title": "",
+    "section": "Don’t use the defaults (colors, fonts, etc.)",
+    "text": "Don’t use the defaults (colors, fonts, etc.)\nRemember accessibility!\n\n\nYou can go a long way just by not using the defaults\nRemember accessibility!"
+  },
+  {
+    "objectID": "index.html#when-in-doubt-subtract",
+    "href": "index.html#when-in-doubt-subtract",
+    "title": "",
+    "section": "When in doubt, subtract",
+    "text": "When in doubt, subtract\nSimplicity in design can be highly creative\n\n\nSometimes when we are creative, we tend to overcomplicate things\nInstead subtract and go bold or not"
+  },
+  {
+    "objectID": "index.html#try-new-techniques",
+    "href": "index.html#try-new-techniques",
+    "title": "",
+    "section": "Try new techniques",
+    "text": "Try new techniques\nStep out of comfort zones\n\nTo find your own style, you have to actually try something new\nIf you feel a bit insecure, do a more conventional plot and a more creative one"
+  },
+  {
+    "objectID": "index.html#choose-subjects-that-resonate-with-you",
+    "href": "index.html#choose-subjects-that-resonate-with-you",
+    "title": "",
+    "section": "Choose subjects that resonate with you",
+    "text": "Choose subjects that resonate with you\nBlend your interests, hobbies, knowledge\n\nEasier to be creative when you like the subject a TV show you like, gardening, whatever\nMakes it easier to be personal"
+  },
+  {
+    "objectID": "index.html#dont-use-the-defaults",
+    "href": "index.html#dont-use-the-defaults",
+    "title": "",
+    "section": "1/3 Don’t use the defaults",
+    "text": "1/3 Don’t use the defaults\nAdd a color scale with a palette from the MetBrewer package. Add a theme to your plot and make a few modifications.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#subtract",
+    "href": "index.html#subtract",
+    "title": "",
+    "section": "2/3 Subtract",
+    "text": "2/3 Subtract\nRemove elements from plot, make it bolder (modified, C. Scherér)\n\nPlease enable JavaScript to experience the dynamic code cell content on this page."
+  },
+  {
+    "objectID": "index.html#end-of-exercises-2",
+    "href": "index.html#end-of-exercises-2",
+    "title": "",
+    "section": "End of exercises",
+    "text": "End of exercises"
+  }
+]
