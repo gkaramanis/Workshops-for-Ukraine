@@ -675,7 +675,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"code":"ggplot(mpg, aes(cty, hwy)) +\n  geom_point(aes(colour = displ))","id":1,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-1","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + \n  geom_density_ridges() ","id":2,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-2","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point()","id":3,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-3","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"ggplot(msleep, aes(x = bodywt, y = brainwt, size = sleep_total, color = vore)) +\n  geom_point(alpha = 0.7) +\n  scale_x_log10() +\n  scale_y_log10() +\n  scale_size_continuous(range = c(1, 8)) +\n  scale_color_viridis_d(option = \"turbo\", na.value = \"gray50\") +\n  labs(\n    title = \"Mammals sleep dataset\",\n    subtitle = \"An updated and expanded version of the mammals sleep dataset\",\n    x = \"Body weight (kg, log)\",\n    y = \"Brain weight (kg, log)\",\n    size = \"Sleep (h)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\"),\n    plot.margin = margin(10, 10, 10, 10)\n  )","id":4,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-4","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"ggplot() +\n  geom_point(aes(x = c(-1, 1), y = 0), size = 50) +\n  geom_curve(aes(x = -1, xend = 1, y = -1, yend = -1)) +\n  coord_fixed(xlim = c(-2, 2), ylim = c(-2, 1))","id":5,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-5","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"presidential %>% \n  mutate(\n    duration = as.numeric(end - start),\n    i = row_number()\n  ) %>% \n  ggplot(aes(0, i, label = name)) +\n  geom_text() +\n  theme_void()","id":6,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-6","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"excel_df <- data.frame(\n  Product = factor(rep(c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\"), each = 2), \n                   levels = c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\")),\n  Variable = rep(c(\"Restock Time\", \"Shelf Life\"), 4),\n  Value = c(14, 19, 8, 15, 18, 7, 12, 10)\n)\n\nggplot(excel_df) +\n  geom_col(aes(Value, Product, fill = Variable), position = position_dodge())","id":7,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":"6","out-width":"700px","output":"true","fig-width":"10","warning":"true","autorun":"false","label":"unnamed-chunk-7","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"ggplot(mpg, aes(cty, hwy, colour = class)) +\n  geom_point()","id":8,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":5,"out-width":"700px","output":"true","fig-width":7,"warning":"true","autorun":"false","label":"unnamed-chunk-8","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}},{"code":"msleep %>% \n  count(vore) %>% \n  ggplot(aes(x = vore, y = n, fill = vore)) +\n  geom_col(color = \"black\", linewidth = 0.5) +\n  scale_y_continuous(breaks = seq(0, 40, 5)) +\n  labs(\n    title = \"Number of animals in the mammals sleep dataset by feeding behavior\",\n    x = \"Feeding behavior\",\n    fill = \"Feeding behavior\",\n    y = \"N\"\n  ) +\n  theme_linedraw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14, face = \"bold\")\n  )","id":9,"options":{"dpi":72,"editor-font-scale":"0.5","fig-height":"7","out-width":"700px","output":"true","fig-width":"8","warning":"true","autorun":"false","label":"unnamed-chunk-9","comment":"","message":"true","editor-max-height":"","classes":"","fig-cap":"","results":"markup","read-only":"false","context":"interactive","editor-word-wrap":"true","out-height":"","editor-quick-suggestions":"false"}}];
+  globalThis.qwebrCellDetails = [{"id":1,"code":"ggplot(mpg, aes(cty, hwy)) +\n  geom_point(aes(colour = displ))","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-1","output":"true","dpi":72}},{"id":2,"code":"ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + \n  geom_density_ridges() ","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-2","output":"true","dpi":72}},{"id":3,"code":"ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point()","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-3","output":"true","dpi":72}},{"id":4,"code":"ggplot(msleep, aes(x = bodywt, y = brainwt, size = sleep_total, color = vore)) +\n  geom_point(alpha = 0.7) +\n  scale_x_log10() +\n  scale_y_log10() +\n  scale_size_continuous(range = c(1, 8)) +\n  scale_color_viridis_d(option = \"turbo\", na.value = \"gray50\") +\n  labs(\n    title = \"Mammals sleep dataset\",\n    subtitle = \"An updated and expanded version of the mammals sleep dataset\",\n    x = \"Body weight (kg, log)\",\n    y = \"Brain weight (kg, log)\",\n    size = \"Sleep (h)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\"),\n    plot.margin = margin(10, 10, 10, 10)\n  )","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-4","output":"true","dpi":72}},{"id":5,"code":"ggplot() +\n  geom_point(aes(x = c(-1, 1), y = 0), size = 50) +\n  geom_curve(aes(x = -1, xend = 1, y = -1, yend = -1)) +\n  coord_fixed(xlim = c(-2, 2), ylim = c(-2, 1))","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-5","output":"true","dpi":72}},{"id":6,"code":"presidential %>% \n  mutate(\n    duration = as.numeric(end - start),\n    i = row_number()\n  ) %>% \n  ggplot(aes(0, i, label = name)) +\n  geom_text() +\n  theme_void()","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-6","output":"true","dpi":72}},{"id":7,"code":"excel_df <- data.frame(\n  Product = factor(rep(c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\"), each = 2), \n                   levels = c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\")),\n  Variable = rep(c(\"Restock Time\", \"Shelf Life\"), 4),\n  Value = c(14, 19, 8, 15, 18, 7, 12, 10)\n)\n\nggplot(excel_df) +\n  geom_col(aes(Value, Product, fill = Variable), position = position_dodge())","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":"6","warning":"true","editor-word-wrap":"true","classes":"","fig-width":"10","context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-7","output":"true","dpi":72}},{"id":8,"code":"ggplot(diamonds, aes(carat, price)) +\n  geom_bin2d(binwidth = c(.1, 500))","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":5,"warning":"true","editor-word-wrap":"true","classes":"","fig-width":7,"context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-8","output":"true","dpi":72}},{"id":9,"code":"msleep %>% \n  count(vore) %>% \n  ggplot(aes(x = vore, y = n, fill = vore)) +\n  geom_col(color = \"black\", linewidth = 0.5) +\n  scale_y_continuous(breaks = seq(0, 40, 5)) +\n  labs(\n    title = \"Number of animals in the mammals sleep dataset by feeding behavior\",\n    x = \"Feeding behavior\",\n    fill = \"Feeding behavior\",\n    y = \"N\"\n  ) +\n  theme_linedraw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14, face = \"bold\")\n  )","options":{"results":"markup","comment":"","autorun":"false","out-width":"700px","fig-height":"7","warning":"true","editor-word-wrap":"true","classes":"","fig-width":"8","context":"interactive","editor-quick-suggestions":"false","read-only":"false","out-height":"","editor-max-height":"","fig-cap":"","message":"true","editor-font-scale":"0.5","label":"unnamed-chunk-9","output":"true","dpi":72}}];
 
   </script>
   <script type="module">
@@ -2454,11 +2454,11 @@ Connecting seemingly unrelated concepts</p>
 <section id="agenda" class="slide level2">
 <h2>Agenda</h2>
 <p><strong>Finding inspiration</strong><br>
-- Exercises</p>
+- Exercises and discussion</p>
 <p><strong>Getting creative with code</strong><br>
-- Exercises</p>
+- Exercises and discussion</p>
 <p><strong>Making it personal</strong><br>
-- Exercises</p>
+- Exercises and discussion</p>
 <p><strong>Q&amp;A</strong></p>
 <aside class="notes">
 <p>We’ll look at some tips, how we can make the process easier, all the way from the start to the end, and we’re breaking it down to 3 parts</p>
@@ -2474,8 +2474,8 @@ Connecting seemingly unrelated concepts</p>
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
+<section id="webr" class="slide level2">
+<h2>WebR</h2>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 <aside class="notes">
@@ -2501,7 +2501,7 @@ Connecting seemingly unrelated concepts</p>
 
 <img data-src="assets/img/chapter1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="look-at-other-peoples-work" class="slide level2">
-<h2><strong>Look at other people’s work</strong></h2>
+<h2>Look at other people’s work</h2>
 <p><br>
 </p>
 <p>Dissect their choices</p>
@@ -2562,7 +2562,7 @@ Connecting seemingly unrelated concepts</p>
       }</style></aside>
 </section>
 <section id="try-out-new-packages" class="slide level2">
-<h2><strong>Try out new packages</strong></h2>
+<h2>Try out new packages</h2>
 <p><br>
 Social media</p>
 <p>Blogs</p>
@@ -2587,7 +2587,7 @@ Social media</p>
       }</style></aside>
 </section>
 <section id="look-into-charts-typically-used-in-other-fields" class="slide level2">
-<h2><strong>Look into charts typically<br>used in other fields</strong></h2>
+<h2>Look into charts typically<br>used in other fields</h2>
 
 <img data-src="assets/img/ggsoccer.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Shift perspective</p>
@@ -2626,7 +2626,7 @@ Social media</p>
       }</style></aside>
 </section>
 <section id="sketch-before-coding" class="slide level2">
-<h2><strong>Sketch before coding</strong></h2>
+<h2>Sketch before coding</h2>
 
 <img data-src="assets/img/sketch.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Analog/Digital Spend 5-10 minutes to sketch out some ideas I get “locked” when I code</p>
@@ -2643,7 +2643,7 @@ Social media</p>
       }</style></aside>
 </section>
 <section id="break-the-rules" class="slide level2">
-<h2><strong>Break the rules</strong></h2>
+<h2>Break the rules</h2>
 
 <img data-src="assets/img/babynames.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Deliberately try to break the rules</p>
@@ -2661,7 +2661,7 @@ Social media</p>
       }</style></aside>
 </section>
 <section id="try-generative-or-data-art" class="slide level2">
-<h2><strong>Try generative or data art</strong></h2>
+<h2>Try generative or data art</h2>
 <div class="columns">
 <div class="column">
 <div class="quarto-figure quarto-figure-center">
@@ -2711,7 +2711,7 @@ Social media</p>
       }</style></aside>
 </section>
 <section id="ask-an-llm" class="slide level2">
-<h2><strong>Ask an LLM</strong></h2>
+<h2>Ask an LLM</h2>
 
 <img data-src="assets/img/chatgpt.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section class="slide level2">
@@ -2753,7 +2753,7 @@ Social media</p>
 </section>
 <section id="try-out-new-packages-1" class="slide level2">
 <h2>2/5 Try out new packages</h2>
-<p>Note how different charts convey different messages about the same data.</p>
+<p>Note how different charts convey different messages about the same data. Then, continue to the next slide.</p>
 <div class="columns">
 <div class="column">
 <div class="cell">
@@ -2832,7 +2832,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 
 <img data-src="assets/img/chapter2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="look-at-other-peoples-code" class="slide level2">
-<h2><strong>Look at other people’s code</strong></h2>
+<h2>Look at other people’s code</h2>
 
 <img data-src="assets/img/cedric.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Common in the R community to share your code If you see something you like, look at the code</p>
@@ -2849,7 +2849,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
       }</style></aside>
 </section>
 <section id="recreate-data-visualizations-made-with-other-tools" class="slide level2">
-<h2><strong>Recreate data visualizations<br>made with other tools</strong></h2>
+<h2>Recreate data visualizations<br>made with other tools</h2>
 <p>Similar to remixing but here the goal is to make a “copy” of the original</p>
 <aside class="notes">
 <p>Similar to remixing, but this is more of an exercise, you have a goal and you have to come up with solutions</p>
@@ -2893,7 +2893,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 
 <img data-src="assets/img/greeneggs.webp" class="r-stretch"></section>
 <section id="try-to-break-things" class="slide level2">
-<h2><strong>Try to break things</strong></h2>
+<h2>Try to break things</h2>
 <p>Try out different options in ggplot2 functions</p>
 <p>Get to know your tool</p>
 <aside class="notes">
@@ -2914,7 +2914,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
       }</style></aside>
 </section>
 <section id="use-geom_text" class="slide level2">
-<h2><strong>Use <code>geom_text()</code></strong></h2>
+<h2>Use <code>geom_text()</code></h2>
 
 <img data-src="assets/img/text.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Text is direct, no need to look up symbols!</p>
@@ -2943,7 +2943,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 
 <img data-src="assets/img/text.jpg" class="r-stretch"></section>
 <section id="create-your-own-geoms" class="slide level2">
-<h2><strong>Create your own geoms</strong></h2>
+<h2>Create your own geoms</h2>
 
 <img data-src="assets/img/spirals.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>If you want something more custom, you can code it. I’ve tried but never really succeeded, maybe you’ll have better luck</p>
@@ -2960,7 +2960,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
       }</style></aside>
 </section>
 <section id="use-ggplot_buildlayer_data" class="slide level2">
-<h2><strong>Use <del><code>ggplot_build()</code></del><code>layer_data()</code></strong></h2>
+<h2>Use <del><code>ggplot_build()</code></del><code>layer_data()</code></h2>
 
 <img data-src="assets/img/swift.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>A technique that I’ve been using the last year or so</p>
@@ -3003,11 +3003,11 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
       }</style></aside>
 </section>
 <section id="use-coord_radial" class="slide level2">
-<h2><strong>Use <code>coord_radial()</code></strong></h2>
+<h2>Use <code>coord_radial()</code></h2>
 
 <img data-src="assets/img/portal.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="creative-use-of-geoms" class="slide level2">
-<h2><strong>Creative use of geoms</strong></h2>
+<h2>Creative use of geoms</h2>
 
 <img data-src="assets/img/penguins.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
 <p>Use geoms beyond their intended use (off-label!)</p>
@@ -3058,7 +3058,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 </div></div>
 </section>
 <section id="participate-in-challenges" class="slide level2">
-<h2><strong>Participate in challenges</strong></h2>
+<h2>Participate in challenges</h2>
 <p><br>
 Experiment</p>
 <p>Learn</p>
@@ -3079,9 +3079,8 @@ Experiment</p>
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
-<p>Participate in challenges</p>
+<section id="participate-in-challenges-1" class="slide level2">
+<h2>Participate in challenges</h2>
 <p><br>
 Different datasets</p>
 <p>Different types of visualization</p>
@@ -3108,22 +3107,22 @@ Different datasets</p>
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
-<section id="text-visualization" class="slide level2">
-<h2>3/4 Text visualization</h2>
-<p>Map duration to size, party to color</p>
+<section id="use-geom_text-1" class="slide level2">
+<h2>3/4 Use geom_text()</h2>
+<p>Run the code to see a list of U.S. presidents. Then map duration to text <code>size</code> and party to <code>color</code>.</p>
 <div id="qwebr-insertion-location-6"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="recreate-visualizations-made-with-other-tools" class="slide level2">
 <h2>4/4 Recreate visualizations made with other tools</h2>
-<p>Recreate this Excel chart (<a href="https://www.techonthenet.com/excel/charts/bar_chart2016.php" target="_blank">source</a>).</p>
+<p>Recreate this Excel chart (<a href="https://www.techonthenet.com/excel/charts/bar_chart2016.php" target="_blank">source</a>). Don’t worry about the fonts. Focus on colors, legend position, bar width. Try to make it similar but do not spend too much time.</p>
 
 <img data-src="assets/img/excel_barchart.png" class="r-stretch"><div id="qwebr-insertion-location-7"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="end-of-exercises-1" class="slide level2">
 <h2>End of exercises</h2>
-<p>Share the face you created or the recreation of the Excel chart</p>
+<p>Share the face you created or the recreated Excel chart</p>
 <p>Take a break!</p>
 </section>
 <section class="slide level2">
@@ -3148,7 +3147,7 @@ Different datasets</p>
       }</style></aside>
 </section>
 <section id="dont-use-the-defaults-colors-fonts-etc." class="slide level2">
-<h2><strong>Don’t use the defaults<br>(colors, fonts, etc.)</strong></h2>
+<h2>Don’t use the defaults<br>(colors, fonts, etc.)</h2>
 <p>Remember accessibility!</p>
 
 <img data-src="assets/img/metbrewer.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
@@ -3186,7 +3185,7 @@ Different datasets</p>
 </div></div>
 </section>
 <section id="when-in-doubt-subtract" class="slide level2">
-<h2><strong>When in doubt, subtract</strong></h2>
+<h2>When in doubt, subtract</h2>
 <p>Simplicity in design can be highly creative</p>
 
 <img data-src="assets/img/un.jpeg" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
@@ -3205,7 +3204,7 @@ Different datasets</p>
       }</style></aside>
 </section>
 <section id="try-new-techniques" class="slide level2">
-<h2><strong>Try new techniques</strong></h2>
+<h2>Try new techniques</h2>
 <p>Step out of comfort zones</p>
 <aside class="notes">
 <p>To find your own style, you have to actually try something new</p>
@@ -3223,7 +3222,7 @@ Different datasets</p>
       }</style></aside>
 </section>
 <section id="choose-subjects-that-resonate-with-you" class="slide level2">
-<h2><strong>Choose subjects that resonate with you</strong></h2>
+<h2>Choose subjects that<br>resonate with you</h2>
 <p>Blend your interests, hobbies, knowledge</p>
 <aside class="notes">
 <p>Easier to be creative when you like the subject a TV show you like, gardening, whatever</p>
@@ -3249,14 +3248,14 @@ Different datasets</p>
 
 </section>
 <section id="dont-use-the-defaults" class="slide level2">
-<h2>1/3 Don’t use the defaults</h2>
+<h2>1/2 Don’t use the defaults</h2>
 <p>Add a color scale with a palette from the <a href="https://github.com/BlakeRMills/MetBrewer" target="_blank">MetBrewer</a> package. Add a theme to your plot and make a few <a href="https://ggplot2.tidyverse.org/reference/theme.html" target="_blank">modifications</a>.</p>
 <div id="qwebr-insertion-location-8"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
 <section id="subtract" class="slide level2">
-<h2>2/3 Subtract</h2>
-<p>Remove elements from plot, make it bolder (modified, C. Scherér)</p>
+<h2>2/2 Subtract</h2>
+<p>Run the code and see the plot. Are there any redundant elements that can be removed? Remove them or modify others to make the plot simpler and bolder (original exercise by Cédric Scherer).</p>
 <div id="qwebr-insertion-location-9"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </section>
