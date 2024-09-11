@@ -23,6 +23,7 @@ editor_options:
 library(ggplot2) 
 library(dplyr)
 library(treemapify)
+library(MetBrewer)
 ```
 
 # Getting creative<br>with ggplot2

@@ -1,9 +1,16 @@
 
 # Workshops for Ukraine - Getting creative with ggplot2
 
-[Slides with exercises](https://gkaramanis.github.io/Workshops-for-Ukraine/#/getting-creative-with-ggplot2)
+[Slides with exercises](https://gkaramanis.github.io/Workshops-for-Ukraine/#/getting-creative-with-ggplot2)  
 [Exercises only](https://gkaramanis.github.io/Workshops-for-Ukraine/exercises.html#/exercises---part-1)
 
+
+For the exercises, we'll be using webR, which allow us to run R code in the browser, no need to install anything.
+
+Use ```Slides with exercises``` if you want to follow along during the presentation, or ```Exercises only``` if you only want to see the slides containing exercises. If your prefer to run the exercises in RStudio or Positron, you can copy the code from the exercises. In that case, make sure to have the following packages installed: ggplot2, dplyr, ggridges, MetBrewer and treemapify.
+  
+  
+Resources:  
 
 ## Data visualization blogs and websites  
 [Data Visualization Society](https://www.datavisualizationsociety.org)  
