@@ -11,7 +11,7 @@ filters:
   - webr
 webr: 
   show-startup-message: false
-packages: ["ggplot2", "dplyr", "MetBrewer", "treemapify", "ggridges"]
+  packages: ["ggplot2", "dplyr", "MetBrewer", "treemapify", "ggridges"]
 editor: 
   render-on-save: true
 editor_options: 
