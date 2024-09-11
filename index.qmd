@@ -825,7 +825,7 @@ We all are different, hard to give advice without sounding like "just be yoursel
 
 ------------------------------------------------------------------------
 
-## **Don't use the defaults (colors, fonts, etc.)**
+## **Don't use the defaults<br>(colors, fonts, etc.)**
 
 Remember accessibility!
 
@@ -877,7 +877,7 @@ If you feel a bit insecure, do a more conventional plot and a more creative one
 
 ------------------------------------------------------------------------
 
-## **Choose subjects that resonate with you**
+## **Choose subjects that<br>resonate with you**
 
 Blend your interests, hobbies, knowledge
 
