@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs:
-    theme: assets/custom_mod.scss
+    theme: assets/custom.scss
     code-overflow: wrap
     smaller: true
     scrollable: true

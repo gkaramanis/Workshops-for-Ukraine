@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Outfit:wght@400;600;700&family=Fira+Code:wght@400;500&family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:ital,wght@0,400..700;1,400..700&family=Quicksand&display=swap');
 
 /*-- scss:defaults --*/
 
 // Base color and complementary colors
-$color-base: #A6CDFB;
+$color-base: #FBA6CD;
 $color-complement1: #FBE4A6;
-$color-complement2: #FBA6CD;
+$color-complement2: #A6CDFB;
 $color-complement3: #CDFBA6;
 
 // Theme colors
-$body-bg: #f4f8fc;
+$body-bg: #FFFCF5;
 $body-color: #333333;
 $heading-color: darken($color-base, 40%);
 $link-color: darken($color-complement2, 30%);
@@ -18,16 +18,15 @@ $selection-bg: $color-base;
 $selection-color: #FFFFFF;
 
 // Fonts
-$font-family-sans-serif: 'Outfit', Helvetica, sans-serif;
-$font-family-monospace: 'Fira Code', monospace;
-$headings-font-family: 'Bungee Shade', cursive;
+$font-family-sans-serif: 'Oxygen', Helvetica, sans-serif;
+$headings-font-family: 'Quicksand', serif;
 
 // Base font sizes
-$font-size-base: 38px;
-$h1-font-size: 2.6em;
-$h2-font-size: 2em;
-$h3-font-size: 1.6em;
-$h4-font-size: 1.3em;
+$font-size-base: 32px;
+$h1-font-size: 1.5em;
+$h2-font-size: 1.3em;
+$h3-font-size: 1.1em;
+$h4-font-size: 1 em;
 
 /*-- scss:rules --*/
 
@@ -59,14 +58,8 @@ $h4-font-size: 1.3em;
   word-wrap: break-word;
 }
 
-.reveal h1 { font-size: $h1-font-size; }
-.reveal h2 {
-  font-size: $h2-font-size;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: left;
-}
+.reveal h1 { font-size: $h1-font-size; text-align: center;}
+.reveal h2 { font-size: $h2-font-size; }
 .reveal h3 { font-size: $h3-font-size; }
 .reveal h4 { font-size: $h4-font-size; }
 
@@ -74,6 +67,10 @@ $h4-font-size: 1.3em;
   margin: 20px 0;
   line-height: 1.4;
   font-weight: 400;
+}
+
+.center {
+  text-align: center;
 }
 
 .reveal strong, 
@@ -199,24 +196,4 @@ $h4-font-size: 1.3em;
   background-color: rgba($color-base, 0.7);
   color: $body-color;
   font-weight: 600;
-}
-
-// Title and section slides
-.reveal .slide-background.title-slide,
-.reveal .slide-background.section-slide {
-  background-color: darken($color-base, 40%);
-}
-
-.reveal .title-slide h1,
-.reveal .title-slide h2,
-.reveal .title-slide h3,
-.reveal .section-slide h1,
-.reveal .section-slide h2,
-.reveal .section-slide h3 {
-  color: #FFFFFF;
-}
-
-.reveal .slides section.title-slide,
-.reveal .slides section.section-slide {
-  background-color: darken($color-base, 40%);
 }
