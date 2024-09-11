@@ -1,0 +1,268 @@
+---
+format: 
+  revealjs:
+    theme: assets/custom.scss
+code-overflow: wrap
+smaller: true
+scrollable: true
+progress: true
+navigation-mode: linear
+filters:
+  - webr
+webr: 
+  show-startup-message: false
+packages: ["ggplot2", "dplyr", "MetBrewer", "treemapify", "ggridges"]
+editor: 
+  render-on-save: true
+editor_options: 
+  chunk_output_type: console
+---
+  
+# Exercises  - Part 1
+
+------------------------------------------------------------------------
+  
+  ## 1/5 Look at other people's work
+  
+  On the next slide, choose a visualization that you like. Then, spend a couple minutes to think:
+  
+  Why do you like it? (Style, colors, emotional response,…)
+
+How did they make it? (What kind of chart is it? If it were a ggplot, which geoms would you use to make it?)
+
+------------------------------------------------------------------------
+  
+  Choose one of the visualizations below, or pick one from the [Information is Beautiful Awards Longlist](https://www.informationisbeautifulawards.com/showcase?award=2023&pcategory=long-list&type=awards){target="_blank"}
+
+![](assets/img/hats.webp){fig-align="center"}
+
+![](https://blog.datawrapper.de/wp-content/uploads/2023/03/img00027-1240x1101.png){fig-align="center"}
+
+![](assets/img/migration.png){fig-align="center"}
+
+------------------------------------------------------------------------
+  
+  ## 2/5 Try out new packages
+  
+  Note how different charts convey different messages about the same data.
+
+::::: columns
+::: column
+```{r echo=TRUE}
+
+ggplot(diamonds, aes(cut, fill = cut)) +
+  geom_bar()
+
+```
+:::
+  
+  ::: column
+```{r echo=TRUE}
+ggplot(diamonds %>% count(cut), aes(area = n, label = cut, fill = cut)) +
+  geom_treemap() +
+  geom_treemap_text(color = "white")
+```
+:::
+  :::::
+  
+  ------------------------------------------------------------------------
+  
+  Run the code below. Then, go to [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html){target="_blank"} and adapt one of the examples to the ```diamonds``` dataset below and rerun the code. Why would you prefer ggridges over a bar chart or a treemap?
+  
+  ```{webr-r}
+ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + 
+  geom_density_ridges() 
+```
+
+------------------------------------------------------------------------
+  
+  ## 3/5 Search in other fields
+  
+  Go to [CRAN Task Views](https://cran.r-project.org/web/views/){target="_blank"} and pick a topic unrelated to your work or interests. Search for `plot` or `visualiz` in that topic, in order to find packages you could use. Then, go to a package's vignette or documentation to find plot examples. How might you adapt them to your own data or work?
+
+![](assets/img/cran-views.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## 4/5 Break the rules
+
+A common rule in data visualization is:
+
+> Mapping a single variable to multiple aesthetics is redundant. Because it is redundant information, in most cases avoid mapping a single variable to multiple aesthetics.\
+> ([R for Data Science: Exercise Solutions](https://jrnold.github.io/r4ds-exercise-solutions/data-visualisation.html))
+
+Why do you think this rule is usually recommended? Take a moment to think about it, then continue to the next slide.
+
+------------------------------------------------------------------------
+
+Map one or both variables (`displ`, `hwy`) to as many aesthetics as you want. [Available aesthetics](https://ggplot2.tidyverse.org/articles/ggplot2-specs.html#point){target="_blank"} for geom_point() are: `color`, `size`, `alpha` and `shape` (plus `fill` for some shapes). Are there any benefits by mapping a variable to two or more aesthetics?
+
+
+```{webr-r}
+ggplot(mpg, aes(x = displ, y = hwy)) +
+  geom_point()
+```
+
+------------------------------------------------------------------------
+
+## 5/5 Ask an LLM
+
+> Give me 5 ideas for a creative data visualization of the mpg dataset in ggplot2
+
+\
+Test this or a similar prompt with your favorite LLM or [Copilot](https://www.bing.com/chat){target="_blank"} (free, no account needed)
+
+------------------------------------------------------------------------
+
+## End of exercises
+
+Share any of the following in the chat, or take a break!
+
+A visualization you liked, write why you like it
+
+A new package you would like to try and why
+
+Did your LLM come up with any good ideas?
+
+---
+
+# Exercises - Part 2
+
+------------------------------------------------------------------------
+
+## 1/4 Try to break ggplot
+
+Try out really big or negative values in functions. Use expressions in aes() to create on-the-fly variables. Use unconventional geoms, eg. geom_tile. Use coord_radial(). Use negative values in margins.
+
+```{webr-r}
+ggplot(msleep, aes(x = bodywt, y = brainwt, size = sleep_total, color = vore)) +
+  geom_point(alpha = 0.7) +
+  scale_x_log10() +
+  scale_y_log10() +
+  scale_size_continuous(range = c(1, 8)) +
+  scale_color_viridis_d(option = "turbo", na.value = "gray50") +
+  labs(
+    title = "Mammals sleep dataset",
+    subtitle = "An updated and expanded version of the mammals sleep dataset",
+    x = "Body weight (kg, log)",
+    y = "Brain weight (kg, log)",
+    size = "Sleep (h)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold"),
+    plot.margin = margin(10, 10, 10, 10)
+  )
+
+```
+
+------------------------------------------------------------------------
+
+## 2/4 Creative use of geoms
+
+Run the code to see the face. Use [ggplot2 geoms](https://ggplot2.tidyverse.org/reference/#geoms) to add a nose, pink cheeks, more eyes, or whatever you want. When you're done, hover over the plot and download it!
+
+```{webr-r}
+ggplot() +
+  geom_point(aes(x = c(-1, 1), y = 0), size = 50) +
+  geom_curve(aes(x = -1, xend = 1, y = -1, yend = -1)) +
+  coord_fixed(xlim = c(-2, 2), ylim = c(-2, 1))
+```
+
+------------------------------------------------------------------------
+
+## 3/4 Text visualization
+
+Map duration to size, party to color
+
+```{webr-r}
+presidential %>% 
+  mutate(
+    duration = as.numeric(end - start),
+    i = row_number()
+  ) %>% 
+  ggplot(aes(0, i, label = name)) +
+  geom_text() +
+  theme_void()
+```
+
+------------------------------------------------------------------------
+
+## 4/4 Recreate visualizations made with other tools
+
+Recreate this Excel chart ([source](https://www.techonthenet.com/excel/charts/bar_chart2016.php){target="_blank"}).
+
+![](assets/img/excel_barchart.png)
+
+```{webr-r}
+#| fig-height: 6
+#| fig-width: 10
+
+excel_df <- data.frame(
+  Product = factor(rep(c("Apples", "Oranges", "Bananas", "Pears"), each = 2), 
+                   levels = c("Apples", "Oranges", "Bananas", "Pears")),
+  Variable = rep(c("Restock Time", "Shelf Life"), 4),
+  Value = c(14, 19, 8, 15, 18, 7, 12, 10)
+)
+
+ggplot(excel_df) +
+  geom_col(aes(Value, Product, fill = Variable), position = position_dodge())
+
+```
+
+------------------------------------------------------------------------
+
+## End of exercises
+
+Share the face you created or the recreation of the Excel chart
+
+Take a break!
+
+------------------------------------------------------------------------
+
+# Exercises - Part 3
+
+------------------------------------------------------------------------
+
+## 1/3 Don't use the defaults
+
+Add a color scale with a palette from the [MetBrewer](https://github.com/BlakeRMills/MetBrewer){target="_blank"} package. Add a theme to your plot and make a few [modifications](https://ggplot2.tidyverse.org/reference/theme.html){target="_blank"}.
+
+```{webr-r}
+ggplot(mpg, aes(cty, hwy, colour = class)) +
+  geom_point()
+```
+
+------------------------------------------------------------------------
+
+## 2/3 Subtract
+
+Remove elements from plot, make it bolder (modified, C. Scherér)
+
+```{webr-r}
+#| fig-height: 7
+#| fig-width: 8
+
+msleep %>% 
+  count(vore) %>% 
+  ggplot(aes(x = vore, y = n, fill = vore)) +
+  geom_col(color = "black", linewidth = 0.5) +
+  scale_y_continuous(breaks = seq(0, 40, 5)) +
+  labs(
+    title = "Number of animals in the mammals sleep dataset by feeding behavior",
+    x = "Feeding behavior",
+    fill = "Feeding behavior",
+    y = "N"
+  ) +
+  theme_linedraw() +
+  theme(
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold")
+  )
+
+```
+
+------------------------------------------------------------------------
+
+## End of exercises
