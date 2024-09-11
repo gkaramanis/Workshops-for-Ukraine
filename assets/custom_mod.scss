@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:ital,wght@0,400..700;1,400..700&family=Quicksand&display=swap');
+
+/*-- scss:defaults --*/
+
+// Base color and complementary colors
+$color-base: #FBA6CD;
+$color-complement1: #FBE4A6;
+$color-complement2: #A6CDFB;
+$color-complement3: #CDFBA6;
+
+// Theme colors
+$body-bg: #FFFCF5;
+$body-color: #333333;
+$heading-color: darken($color-base, 40%);
+$link-color: darken($color-complement2, 30%);
+$link-hover-color: darken($color-complement2, 40%);
+$selection-bg: $color-base;
+$selection-color: #FFFFFF;
+
+// Fonts
+$font-family-sans-serif: 'Oxygen', Helvetica, sans-serif;
+$headings-font-family: 'Quicksand', serif;
+
+// Base font sizes
+$font-size-base: 32px;
+$h1-font-size: 1.5em;
+$h2-font-size: 1.3em;
+$h3-font-size: 1.1em;
+$h4-font-size: 1 em;
+
+/*-- scss:rules --*/
+
+.reveal {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  font-weight: normal;
+  color: $body-color;
+}
+
+.reveal .slides {
+  background-color: $body-bg;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: $heading-color;
+  font-family: $headings-font-family;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+.reveal h1 { font-size: $h1-font-size; text-align: center;}
+.reveal h2 { font-size: $h2-font-size; }
+.reveal h3 { font-size: $h3-font-size; }
+.reveal h4 { font-size: $h4-font-size; }
+
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.center {
+  text-align: center;
+}
+
+.reveal strong, 
+.reveal b {
+  font-weight: 700;
+}
+
+.reveal a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  font-weight: 600;
+
+  &:hover {
+    color: $link-hover-color;
+    text-shadow: none;
+    border: none;
+  }
+}
+
+.reveal ul,
+.reveal ol {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+  font-weight: 400;
+
+  li {
+    margin-bottom: 12px;
+  }
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 15px;
+  font-style: italic;
+  background: rgba($color-complement1, 0.3);
+  border-left: 5px solid $color-complement1;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+  font-weight: 400;
+
+  p:first-child,
+  p:last-child {
+    display: inline-block;
+  }
+}
+
+.reveal code {
+  font-family: $font-family-monospace;
+  background-color: rgba($color-complement3, 0.3);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: $font-family-monospace;
+  line-height: 1.3em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
+
+  code {
+    display: block;
+    padding: 15px;
+    overflow: auto;
+    max-height: 400px;
+    word-wrap: normal;
+    background-color: rgba($color-base, 0.1);
+    border-radius: 5px;
+    font-weight: 500;
+  }
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  th {
+    font-weight: 700;
+    background-color: $color-base;
+    color: #FFFFFF;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.5em 0.7em;
+    border-bottom: 1px solid lighten($color-base, 10%);
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba($color-base, 0.1);
+  }
+}
+
+// Custom classes for color accents
+.pastel-yellow { color: darken($color-complement1, 25%); font-weight: 600; }
+.pastel-pink { color: darken($color-complement2, 25%); font-weight: 600; }
+.pastel-green { color: darken($color-complement3, 25%); font-weight: 600; }
+
+// Progress bar
+.reveal .progress {
+  background: rgba($color-complement1, 0.2);
+
+  span {
+    background: $color-complement2;
+    transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  }
+}
+
+// Slide number
+.reveal .slide-number {
+  background-color: rgba($color-base, 0.7);
+  color: $body-color;
+  font-weight: 600;
+}
