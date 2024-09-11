@@ -18,21 +18,28 @@ editor_options:
   chunk_output_type: console
 ---
   
+```{r}
+# For r blocks
+library(ggplot2) 
+library(dplyr)
+library(treemapify)
+```
+
 # Exercises  - Part 1
 
 ------------------------------------------------------------------------
   
-  ## 1/5 Look at other people's work
+## 1/5 Look at other people's work
   
-  On the next slide, choose a visualization that you like. Then, spend a couple minutes to think:
+On the next slide, choose a visualization that you like. Then, spend a couple minutes to think:
   
-  Why do you like it? (Style, colors, emotional response,…)
+Why do you like it? (Style, colors, emotional response,…)
 
 How did they make it? (What kind of chart is it? If it were a ggplot, which geoms would you use to make it?)
 
 ------------------------------------------------------------------------
   
-  Choose one of the visualizations below, or pick one from the [Information is Beautiful Awards Longlist](https://www.informationisbeautifulawards.com/showcase?award=2023&pcategory=long-list&type=awards){target="_blank"}
+Choose one of the visualizations below, or pick one from the [Information is Beautiful Awards Longlist](https://www.informationisbeautifulawards.com/showcase?award=2023&pcategory=long-list&type=awards){target="_blank"}
 
 ![](assets/img/hats.webp){fig-align="center"}
 
@@ -42,9 +49,9 @@ How did they make it? (What kind of chart is it? If it were a ggplot, which geom
 
 ------------------------------------------------------------------------
   
-  ## 2/5 Try out new packages
+## 2/5 Try out new packages
   
-  Note how different charts convey different messages about the same data.
+Note how different charts convey different messages about the same data.
 
 ::::: columns
 ::: column
@@ -56,18 +63,18 @@ ggplot(diamonds, aes(cut, fill = cut)) +
 ```
 :::
   
-  ::: column
+::: column
 ```{r echo=TRUE}
 ggplot(diamonds %>% count(cut), aes(area = n, label = cut, fill = cut)) +
   geom_treemap() +
   geom_treemap_text(color = "white")
 ```
 :::
-  :::::
+:::::
   
-  ------------------------------------------------------------------------
+------------------------------------------------------------------------
   
-  Run the code below. Then, go to [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html){target="_blank"} and adapt one of the examples to the ```diamonds``` dataset below and rerun the code. Why would you prefer ggridges over a bar chart or a treemap?
+Run the code below. Then, go to [Introduction to ggridges](https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html){target="_blank"} and adapt one of the examples to the ```diamonds``` dataset below and rerun the code. Why would you prefer ggridges over a bar chart or a treemap?
   
   ```{webr-r}
 ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + 
@@ -76,9 +83,9 @@ ggplot(diamonds, aes(x = price, y = cut, fill = cut)) +
 
 ------------------------------------------------------------------------
   
-  ## 3/5 Search in other fields
+## 3/5 Search in other fields
   
-  Go to [CRAN Task Views](https://cran.r-project.org/web/views/){target="_blank"} and pick a topic unrelated to your work or interests. Search for `plot` or `visualiz` in that topic, in order to find packages you could use. Then, go to a package's vignette or documentation to find plot examples. How might you adapt them to your own data or work?
+Go to [CRAN Task Views](https://cran.r-project.org/web/views/){target="_blank"} and pick a topic unrelated to your work or interests. Search for `plot` or `visualiz` in that topic, in order to find packages you could use. Then, go to a package's vignette or documentation to find plot examples. How might you adapt them to your own data or work?
 
 ![](assets/img/cran-views.png){fig-align="center"}
 

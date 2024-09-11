@@ -4,6 +4,8 @@
 
 [Slides with exercises](https://gkaramanis.github.io/Workshops-for-Ukraine/#/getting-creative-with-ggplot2)
 
+[Exercises only](https://gkaramanis.github.io/Workshops-for-Ukraine/exercises.html#/exercises---part-1)
+
 
 ## Data visualization blogs and websites  
 [Data Visualization Society](https://www.datavisualizationsociety.org)  
