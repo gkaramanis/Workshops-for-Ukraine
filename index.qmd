@@ -51,13 +51,13 @@ PhD student\
 [Department of Medical Sciences, Uppsala University](https://www.uu.se/en/contact-and-organisation/staff?query=N11-739)
 
 Data visualization designer\
-[Explained](https://explained.media)
+[Explained](https://explained.media), [karaman.is](https://karaman.is)
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-![](assets/img/penguins.png){fig-align="center"}
+![[Palmer penguins](https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week31)](assets/img/penguins.png){fig-align="center"}
 
 ::: notes
 this
@@ -65,7 +65,7 @@ this
 
 ------------------------------------------------------------------------
 
-![](assets/img/carbon2.png){fig-align="center"}
+![[Food consumption](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week08)](assets/img/carbon2.png){fig-align="center"}
 
 ::: notes
 this
@@ -73,7 +73,7 @@ this
 
 ------------------------------------------------------------------------
 
-![](assets/img/space.png){fig-align="center"}
+![[Astronauts](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week29)](assets/img/space.png){fig-align="center"}
 
 ::: notes
 or this!
@@ -107,7 +107,7 @@ My feeling is that when most people talk about creativity what they actually mea
 
 ------------------------------------------------------------------------
 
-![](assets/img/dear_data.png)
+![[Dear Data](http://www.dear-data.com/theproject)](assets/img/dear_data.png)
 
 ------------------------------------------------------------------------
 
@@ -144,15 +144,15 @@ from the definition of humor: a sense of surprise
 
 ------------------------------------------------------------------------
 
-![](assets/img/transfers.png){fig-align="center"}
+![[Transfer Calligraphy](http://goldensectiongraphics.blogspot.com/2011/03/malofiej19-awards.html)](assets/img/transfers.jpg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-![](assets/img/dataviz1.png){fig-align="center"}
+![[Photoviz: Visualizing Information through Photography](http://feltron.com/PhotoViz.html)](assets/img/dataviz1.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-![](assets/img/dataviz2.png){fig-align="center"}
+![[Data Strings](https://www.domesticstreamers.com/work/data-strings/)](assets/img/dataviz2.png){fig-align="center"}
 
 ::: notes
 Very wide field, different types of tools, techniques, materials even
@@ -215,13 +215,20 @@ ggplot(mpg, aes(cty, hwy)) +
 
 ------------------------------------------------------------------------
 
-![](assets/img/ggplot_ext.png)
+![[ggplot2 extensions - gallery](https://exts.ggplot2.tidyverse.org/gallery/)](assets/img/ggplot_ext.png)
 
 ------------------------------------------------------------------------
 
 ::: {layout-nrow="2"}
-![ggstream](assets/img/ggstream.png){width="45%"} ![geomtextpath](assets/img/geomtextpath.png){width="30%"} ![ggpattern](assets/img/ggpattern.png){width="40%"} ![ggqr](assets/img/ggqr.png){width="45%"}
+![ggstream](assets/img/ggstream.png){width="40%"}
+![geomtextpath](assets/img/geomtextpath.png){width="30%"} ![ggpattern](assets/img/ggpattern.png){width="37%"} ![ggqr](assets/img/ggqr.png){width="40%"}
 :::
+
+[ggstream](https://github.com/davidsjoberg/ggstream),
+[geomtextpath](https://allancameron.github.io/geomtextpath/),
+[ggpattern](https://coolbutuseless.github.io/package/ggpattern/),
+[ggqr](https://github.com/coolbutuseless/ggqr)
+
 
 ::: notes
 Many more on GitHub
@@ -291,21 +298,21 @@ The most obvious
 
 ::::: columns
 ::: column
-[![The Entombment of Christ. On the left, Caravaggio’s original. On the right, Rubens’ versions. - Old Masters Copying Older Masters](assets/img/caravaggio-rubens.jpg)](https://www.sightsize.com/old-masters-copying-older-masters-part-1/)
+![The Entombment of Christ. On the left, Caravaggio’s original. On the right, Rubens’ versions. - [Old Masters Copying Older Masters](https://www.sightsize.com/old-masters-copying-older-masters-part-1/)](assets/img/caravaggio-rubens.jpg)
 :::
 
 ::: column
-[![Everything is a remix](assets/img/remix.png)](https://www.youtube.com/watch?v=X9RYuvPCQUA)
+![[Everything is a remix](https://www.youtube.com/watch?v=X9RYuvPCQUA)](assets/img/remix.png)
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-![](assets/img/carbon1.jpeg){fig-align="center"}
+![[Carbon footprint](https://www.cleanmetrics.com/blog/2020/07/04/case-study-meat-eaters-guide/)](assets/img/carbon1.jpeg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-![](assets/img/carbon2.png){fig-align="center"}
+![[Food consumption](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week08)](assets/img/carbon2.png){fig-align="center"}
 
 ::: notes
 Bars bend, 3d effect
@@ -326,7 +333,7 @@ Newsletters
 
 ------------------------------------------------------------------------
 
-![](assets/img/ggcirclepack.png){fig-align="center"}
+![[American Idol](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2024/2024-week_30), [ggcirclepack](https://github.com/EvaMaeRey/ggcirclepack)](assets/img/ggcirclepack.png){fig-align="center"}
 
 ::: notes
 ggcirclepack
@@ -336,7 +343,7 @@ ggcirclepack
 
 ## Look into charts typically<br>used in other fields
 
-![](assets/img/ggsoccer.png){fig-align="center"}
+![[ggsoccer](https://torvaney.github.io/ggsoccer/)](assets/img/ggsoccer.png){fig-align="center"}
 
 ::: notes
 Shift perspective
@@ -346,11 +353,11 @@ Go through the packages at different CRAN Task Views and search for ggplot2 pack
 
 ------------------------------------------------------------------------
 
-![](assets/img/anchor.png){fig-align="center"}
+![[Japanese Contributions to Data Visualisation](https://datavizcatalogue.com/blog/japanese-contributions-to-data-visualisation/)](assets/img/anchor.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-![](assets/img/bakeoff.jpeg){fig-align="center"}
+![[The Great British Bake off](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_43)](assets/img/bakeoff.jpeg){fig-align="center"}
 
 ::: notes
 Add the original on the left I saw a chart about opening and closing stock prices, minimum and maximum price
@@ -360,7 +367,7 @@ Add the original on the left I saw a chart about opening and closing stock price
 
 ## Sketch before coding
 
-![](assets/img/sketch.png){fig-align="center"}
+![[Natalia Kiseleva](http://eolay.tilda.ws/en)](assets/img/sketch.png){fig-align="center"}
 
 ::: notes
 Analog/Digital Spend 5-10 minutes to sketch out some ideas I get "locked" when I code
@@ -370,7 +377,7 @@ Analog/Digital Spend 5-10 minutes to sketch out some ideas I get "locked" when I
 
 ## Break the rules
 
-![](assets/img/babynames.png){fig-align="center"}
+![[Baby names](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_12)](assets/img/babynames.png){fig-align="center"}
 
 ::: notes
 Deliberately try to break the rules
@@ -384,11 +391,11 @@ I did it a lot in the beginning but not intentionally, I didn't know the rules
 
 ::::: columns
 ::: column
-![Danielle Navarro](assets/img/danielle.png)
+![[Danielle Navarro](https://djnavarro.net)](assets/img/danielle.png)
 :::
 
 ::: {.column width="35%"}
-![MeTooMentum by Valentina D'Efilippo](assets/img/valentina.jpg)
+![MeTooMentum by [Valentina D'Efilippo](http://www.valentinadefilippo.co.uk/)](assets/img/valentina.jpg)
 :::
 :::::
 
@@ -396,11 +403,11 @@ I did it a lot in the beginning but not intentionally, I didn't know the rules
 
 ::::: columns
 ::: column
-![truchet R package](https://paezha.github.io/truchet/reference/figures/README-unnamed-chunk-14-1.png){fig-align="center"}
+![[truchet](https://github.com/paezha/truchet)](https://paezha.github.io/truchet/reference/figures/README-unnamed-chunk-14-1.png){fig-align="center"}
 :::
 
 ::: column
-![](assets/img/dataart.png){fig-align="center"}
+![[Ravelry Yarn](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_41)](assets/img/dataart.png){fig-align="center"}
 :::
 :::::
 
@@ -536,7 +543,7 @@ Did your LLM come up with any good ideas?
 
 ## Look at other people's code
 
-![](assets/img/cedric.png){fig-align="center"}
+![[Cédric Scherer](https://github.com/z3tt)](assets/img/cedric.png){fig-align="center"}
 
 ::: notes
 Common in the R community to share your code If you see something you like, look at the code
@@ -556,11 +563,11 @@ My favorite thing to do, great way to learn!!
 
 ------------------------------------------------------------------------
 
-![](assets/img/eurovision1.jpg){fig-align="center"}
+![[Eurovision Song Contest 2022 Scoreboard](https://x.com/Eurovision/status/1525614683767595008)](assets/img/eurovision1.jpg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
-![](assets/img/eurovision2.png){fig-align="center"}
+![[Eurovsion 2022 Results](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_20)](assets/img/eurovision2.png){fig-align="center"}
 
 ::: notes
 Eurovision song contest scoreboard, as seen on TV
@@ -568,9 +575,9 @@ Eurovision song contest scoreboard, as seen on TV
 
 ------------------------------------------------------------------------
 
-Partly is the goal, partly the constraints
+Partly the goal, partly the constraints
 
-![](assets/img/greeneggs.webp)
+![[Green Eggs and Ham](https://en.wikipedia.org/wiki/Green_Eggs_and_Ham)](assets/img/greeneggs.webp)
 
 ------------------------------------------------------------------------
 
@@ -594,7 +601,7 @@ Try extreme values, very thick lines, huge or tiny text, play with transparency,
 
 ## Use `geom_text()`
 
-![](assets/img/text.png){fig-align="center"}
+![[Employed Status](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week8)](assets/img/text.png){fig-align="center"}
 
 ::: notes
 Text is direct, no need to look up symbols!
@@ -620,7 +627,7 @@ geom_text with ggfx blend
 
 ## Create your own geoms
 
-![](assets/img/spirals.png){fig-align="center"}
+![[ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/ext-springs)](assets/img/spirals.png){fig-align="center"}
 
 ::: notes
 If you want something more custom, you can code it. I've tried but never really succeeded, maybe you'll have better luck
@@ -630,7 +637,7 @@ If you want something more custom, you can code it. I've tried but never really 
 
 ## Use ~~`ggplot_build()`~~`layer_data()`
 
-![](assets/img/swift.png){fig-align="center"}
+![[Taylor Swift](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2023/2023-week_42)](assets/img/swift.png){fig-align="center"}
 
 ::: notes
 A technique that I've been using the last year or so
@@ -638,7 +645,7 @@ A technique that I've been using the last year or so
 
 ------------------------------------------------------------------------
 
-![](assets/img/beeswarm.png){fig-align="center"}
+![[ggbeeswarm](https://github.com/eclarke/ggbeeswarm)](assets/img/beeswarm.png){fig-align="center"}
 
 ------------------------------------------------------------------------
 
@@ -658,7 +665,7 @@ Make a plot with ggbeeswarm, use ggplot_build() to get the plot elements as data
 
 ## Use `coord_radial()`
 
-![](assets/img/portal.png){fig-align="center"}
+![[Objects Launched into Space](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2024/2024-week_17)](assets/img/outerspace.jpg){fig-align="center"}
 
 ------------------------------------------------------------------------
 
@@ -676,7 +683,7 @@ Try to see geoms not as chart but as building blocks or drawing tools. geom_poin
 
 `geom_bspline_closed()` from ggforce
 
-![](assets/img/xray.png){fig-align="center"}
+![[ggforce](http://ggforce.data-imaginist.com)](assets/img/xray.png){fig-align="center"}
 
 ::: notes
 I don't really know what the intended use for geom_bspline_closed() is, but I don't think it's for drawing penguins! :)
@@ -692,7 +699,7 @@ See like an artist
 :::
 
 ::: {.column width="40%"}
-![](assets/img/picturethis.jpg)
+![[Picture this](https://www.mollybang.com/Pages/picture.html)](assets/img/picturethis.jpg)
 :::
 :::::
 
@@ -707,7 +714,7 @@ Learn
 
 Get feedback
 
-![](assets/img/TidyTuesday.png){fig-align="center"}
+![[TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/README.md)](assets/img/TidyTuesday.png){fig-align="center"}
 
 ::: notes
 Share online if you want to, low risk environment, R people are usually nice :)
@@ -838,7 +845,7 @@ We all are different, hard to give advice without sounding like "just be yoursel
 
 Remember accessibility!
 
-![](assets/img/metbrewer.png){fig-align="center"}
+![[MetBrewer](https://github.com/BlakeRMills/MetBrewer)](assets/img/metbrewer.png){fig-align="center"}
 
 ::: notes
 You can go a long way just by not using the defaults
@@ -864,7 +871,7 @@ Remember accessibility!
 
 Simplicity in design can be highly creative
 
-![](assets/img/un.jpeg){fig-align="center"}
+![(UN votes)[https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week12]](assets/img/un.jpeg){fig-align="center"}
 
 ::: notes
 Sometimes when we are creative, we tend to overcomplicate things
@@ -965,7 +972,7 @@ Make it easy for you Bookmarks, notebook, whatever works for you
 
 Always give credit!
 
-![](assets/img/benice.png){fig-align="center"}
+![(Steal Like an Artist)[https://austinkleon.com/steal/]](assets/img/benice.png){fig-align="center"}
 
 ::: notes
 Whenever you use something or get inspired by someone else on social media or maybe a comment in your code
@@ -977,7 +984,7 @@ Just do it, creativity shouldn't be the goal
 
 You can't be creative all the time
 
-![](assets/img/cringe.jpeg){fig-align="center"}
+![[CEO Departures](https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week17)](assets/img/cringe.jpeg){fig-align="center"}
 
 ::: notes
 And to contradict myself here, try to be creative if you want to but...
@@ -1001,4 +1008,9 @@ Creating your own style or expression is a skill and it takes time to develop
 
 ------------------------------------------------------------------------
 
+::: {.center}
+## Thank you!
+
 ![](assets/img/nopressure.png){fig-align="center"}
+
+:::
