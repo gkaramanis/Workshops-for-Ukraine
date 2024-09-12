@@ -92,7 +92,9 @@ Better and more clear communication\*
 ::: notes
 My talk is about creative visualizations but you may ask, why?
 
-making the plot more resonant and memorable, retain information better
+making the plot more memorable, retain information better
+
+*You actually need to have a decent visualization for that, the workshop is now about creating good visualizations! :) 
 :::
 
 ------------------------------------------------------------------------
@@ -146,6 +148,10 @@ from the definition of humor: a sense of surprise
 
 ![[Transfer Calligraphy](http://goldensectiongraphics.blogspot.com/2011/03/malofiej19-awards.html)](assets/img/transfers.jpg){fig-align="center"}
 
+::: notes
+Very wide field, different types of tools, techniques, materials even
+:::
+
 ------------------------------------------------------------------------
 
 ![[Photoviz: Visualizing Information through Photography](http://feltron.com/PhotoViz.html)](assets/img/dataviz1.png){fig-align="center"}
@@ -180,7 +186,7 @@ ggplot2 extensions
 :::::
 
 ::: notes
-Being creative is not about the tools but R/ggplot2 have some advantages Since we're at posit::conf, we're going to talk about the tools we use!
+Being creative is not about the tools but R/ggplot2 have some advantages
 
 https://r.qcbs.ca/workshop03/book-en/grammar-of-graphics-gg-basics.html https://exts.ggplot2.tidyverse.org/gallery/
 :::
@@ -267,7 +273,8 @@ ggplot(mpg, aes(cty, hwy)) +
 ```
 
 ::: notes
-Run, edit, download Use RStudio/Positron if you feel more comfortable
+Run, edit, download 
+Use RStudio/Positron if you feel more comfortable
 No fonts!
 
 :::
@@ -972,7 +979,7 @@ Make it easy for you Bookmarks, notebook, whatever works for you
 
 Always give credit!
 
-![(Steal Like an Artist)[https://austinkleon.com/steal/]](assets/img/benice.png){fig-align="center"}
+![[Steal Like an Artist](https://austinkleon.com/steal/)](assets/img/benice.png){fig-align="center"}
 
 ::: notes
 Whenever you use something or get inspired by someone else on social media or maybe a comment in your code
