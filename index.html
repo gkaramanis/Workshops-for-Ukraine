@@ -675,7 +675,7 @@
   };
 
   // Store cell data
-  globalThis.qwebrCellDetails = [{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-1","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":1,"code":"ggplot(mpg, aes(cty, hwy)) +\n  geom_point(aes(colour = displ))"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-2","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":2,"code":"ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + \n  geom_density_ridges() "},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-3","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":3,"code":"ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point()"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-4","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":4,"code":"ggplot(msleep, aes(x = bodywt, y = brainwt, size = sleep_total, color = vore)) +\n  geom_point(alpha = 0.7) +\n  scale_x_log10() +\n  scale_y_log10() +\n  scale_size_continuous(range = c(1, 8)) +\n  scale_color_viridis_d(option = \"turbo\", na.value = \"gray50\") +\n  labs(\n    title = \"Mammals sleep dataset\",\n    subtitle = \"An updated and expanded version of the mammals sleep dataset\",\n    x = \"Body weight (kg, log)\",\n    y = \"Brain weight (kg, log)\",\n    size = \"Sleep (h)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\"),\n    plot.margin = margin(10, 10, 10, 10)\n  )"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-5","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":5,"code":"ggplot() +\n  geom_point(aes(x = c(-1, 1), y = 0), size = 50) +\n  geom_curve(aes(x = -1, xend = 1, y = -1, yend = -1)) +\n  coord_fixed(xlim = c(-2, 2), ylim = c(-2, 1))"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-6","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":6,"code":"presidential %>% \n  mutate(\n    duration = as.numeric(end - start),\n    i = row_number()\n  ) %>% \n  ggplot(aes(0, i, label = name)) +\n  geom_text() +\n  theme_void()"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":"10","warning":"true","editor-word-wrap":"true","output":"true","fig-height":"6","label":"unnamed-chunk-7","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":7,"code":"excel_df <- data.frame(\n  Product = factor(rep(c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\"), each = 2), \n                   levels = c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\")),\n  Variable = rep(c(\"Restock Time\", \"Shelf Life\"), 4),\n  Value = c(14, 19, 8, 15, 18, 7, 12, 10)\n)\n\nggplot(excel_df) +\n  geom_col(aes(Value, Product, fill = Variable), position = position_dodge())"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":7,"warning":"true","editor-word-wrap":"true","output":"true","fig-height":5,"label":"unnamed-chunk-8","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":8,"code":"ggplot(diamonds, aes(carat, price)) +\n  geom_bin2d(binwidth = c(.1, 500))"},{"options":{"out-height":"","context":"interactive","read-only":"false","out-width":"700px","fig-cap":"","message":"true","results":"markup","editor-font-scale":"0.5","editor-max-height":"","dpi":72,"fig-width":"8","warning":"true","editor-word-wrap":"true","output":"true","fig-height":"7","label":"unnamed-chunk-9","classes":"","autorun":"false","comment":"","editor-quick-suggestions":"false"},"id":9,"code":"msleep %>% \n  count(vore) %>% \n  ggplot(aes(x = vore, y = n, fill = vore)) +\n  geom_col(color = \"black\", linewidth = 0.5) +\n  scale_y_continuous(breaks = seq(0, 40, 5)) +\n  labs(\n    title = \"Number of animals in the mammals sleep dataset by feeding behavior\",\n    x = \"Feeding behavior\",\n    fill = \"Feeding behavior\",\n    y = \"N\"\n  ) +\n  theme_linedraw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14, face = \"bold\")\n  )"}];
+  globalThis.qwebrCellDetails = [{"id":1,"code":"ggplot(mpg, aes(cty, hwy)) +\n  geom_point(aes(colour = displ))","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-1","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":2,"code":"ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + \n  geom_density_ridges() ","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-2","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":3,"code":"ggplot(mpg, aes(x = displ, y = hwy)) +\n  geom_point()","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-3","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":4,"code":"ggplot(msleep, aes(x = bodywt, y = brainwt, size = sleep_total, color = vore)) +\n  geom_point(alpha = 0.7) +\n  scale_x_log10() +\n  scale_y_log10() +\n  scale_size_continuous(range = c(1, 8)) +\n  scale_color_viridis_d(option = \"turbo\", na.value = \"gray50\") +\n  labs(\n    title = \"Mammals sleep dataset\",\n    subtitle = \"An updated and expanded version of the mammals sleep dataset\",\n    x = \"Body weight (kg, log)\",\n    y = \"Brain weight (kg, log)\",\n    size = \"Sleep (h)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\"),\n    plot.margin = margin(10, 10, 10, 10)\n  )","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-4","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":5,"code":"ggplot() +\n  geom_point(aes(x = c(-1, 1), y = 0), size = 50) +\n  geom_curve(aes(x = -1, xend = 1, y = -1, yend = -1)) +\n  coord_fixed(xlim = c(-2, 2), ylim = c(-2, 1))","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-5","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":6,"code":"presidential %>% \n  mutate(\n    duration = as.numeric(end - start),\n    i = row_number()\n  ) %>% \n  ggplot(aes(0, i, label = name)) +\n  geom_text() +\n  theme_void()","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-6","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":7,"code":"excel_df <- data.frame(\n  Product = factor(rep(c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\"), each = 2), \n                   levels = c(\"Apples\", \"Oranges\", \"Bananas\", \"Pears\")),\n  Variable = rep(c(\"Restock Time\", \"Shelf Life\"), 4),\n  Value = c(14, 19, 8, 15, 18, 7, 12, 10)\n)\n\nggplot(excel_df) +\n  geom_col(aes(Value, Product, fill = Variable), position = position_dodge())","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":"10","label":"unnamed-chunk-7","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":"6"}},{"id":8,"code":"ggplot(diamonds, aes(carat, price)) +\n  geom_bin2d(binwidth = c(.1, 500))","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":7,"label":"unnamed-chunk-8","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":5}},{"id":9,"code":"msleep %>% \n  count(vore) %>% \n  ggplot(aes(x = vore, y = n, fill = vore)) +\n  geom_col(color = \"black\", linewidth = 0.5) +\n  scale_y_continuous(breaks = seq(0, 40, 5)) +\n  labs(\n    title = \"Number of animals in the mammals sleep dataset by feeding behavior\",\n    x = \"Feeding behavior\",\n    fill = \"Feeding behavior\",\n    y = \"N\"\n  ) +\n  theme_linedraw() +\n  theme(\n    plot.title = element_text(size = 16, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14, face = \"bold\")\n  )","options":{"output":"true","out-width":"700px","comment":"","results":"markup","classes":"","warning":"true","fig-cap":"","dpi":72,"editor-quick-suggestions":"false","fig-width":"8","label":"unnamed-chunk-9","editor-word-wrap":"true","editor-font-scale":"0.5","read-only":"false","editor-max-height":"","context":"interactive","autorun":"false","message":"true","out-height":"","fig-height":"7"}}];
 
   </script>
   <script type="module">
@@ -2197,13 +2197,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>PhD student<br>
 <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N11-739">Department of Medical Sciences, Uppsala University</a></p>
 <p>Data visualization designer<br>
-<a href="https://explained.media">Explained</a></p>
+<a href="https://explained.media">Explained</a>, <a href="https://karaman.is">karaman.is</a></p>
 </div></div>
 </section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/penguins.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/penguins.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week31">Palmer penguins</a></p><aside class="notes">
 <p>this</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2220,7 +2220,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section class="slide level2">
 
 
-<img data-src="assets/img/carbon2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/carbon2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week08">Food consumption</a></p><aside class="notes">
 <p>this</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2237,7 +2237,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section class="slide level2">
 
 
-<img data-src="assets/img/space.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/space.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week29">Astronauts</a></p><aside class="notes">
 <p>or this!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2291,7 +2291,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <section class="slide level2">
 
 
-<img data-src="assets/img/dear_data.png" class="r-stretch"></section>
+<img data-src="assets/img/dear_data.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://www.dear-data.com/theproject">Dear Data</a></p></section>
 <section id="creativity" class="slide level2">
 <h2>Creativity</h2>
 <div class="columns">
@@ -2332,15 +2332,15 @@ Connecting seemingly unrelated concepts</p>
 <section class="slide level2">
 
 
-<img data-src="assets/img/transfers.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/transfers.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://goldensectiongraphics.blogspot.com/2011/03/malofiej19-awards.html">Transfer Calligraphy</a></p></section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/dataviz1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/dataviz1.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://feltron.com/PhotoViz.html">Photoviz: Visualizing Information through Photography</a></p></section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/dataviz2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/dataviz2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.domesticstreamers.com/work/data-strings/">Data Strings</a></p><aside class="notes">
 <p>Very wide field, different types of tools, techniques, materials even</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2424,7 +2424,7 @@ Connecting seemingly unrelated concepts</p>
 <section class="slide level2">
 
 
-<img data-src="assets/img/ggplot_ext.png" class="r-stretch"></section>
+<img data-src="assets/img/ggplot_ext.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://exts.ggplot2.tidyverse.org/gallery/">ggplot2 extensions - gallery</a></p></section>
 <section class="slide level2">
 
 <div>
@@ -2433,10 +2433,11 @@ Connecting seemingly unrelated concepts</p>
 <div class="quarto-layout-panel" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<p><img data-src="assets/img/ggstream.png" style="width:45.0%" alt="ggstream"> <img data-src="assets/img/geomtextpath.png" style="width:30.0%" alt="geomtextpath"> <img data-src="assets/img/ggpattern.png" style="width:40.0%" alt="ggpattern"> <img data-src="assets/img/ggqr.png" style="width:45.0%" alt="ggqr"></p>
+<p><img data-src="assets/img/ggstream.png" style="width:40.0%" alt="ggstream"> <img data-src="assets/img/geomtextpath.png" style="width:30.0%" alt="geomtextpath"> <img data-src="assets/img/ggpattern.png" style="width:37.0%" alt="ggpattern"> <img data-src="assets/img/ggqr.png" style="width:40.0%" alt="ggqr"></p>
 </div>
 </div>
 </div>
+<p><a href="https://github.com/davidsjoberg/ggstream">ggstream</a>, <a href="https://allancameron.github.io/geomtextpath/">geomtextpath</a>, <a href="https://coolbutuseless.github.io/package/ggpattern/">ggpattern</a>, <a href="https://github.com/coolbutuseless/ggqr">ggqr</a></p>
 <aside class="notes">
 <p>Many more on GitHub</p>
 <style type="text/css">
@@ -2529,15 +2530,15 @@ Connecting seemingly unrelated concepts</p>
 <div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://www.sightsize.com/old-masters-copying-older-masters-part-1/"><img data-src="assets/img/caravaggio-rubens.jpg" alt="The Entombment of Christ. On the left, Caravaggio’s original. On the right, Rubens’ versions. - Old Masters Copying Older Masters"></a></p>
-<figcaption>The Entombment of Christ. On the left, Caravaggio’s original. On the right, Rubens’ versions. - Old Masters Copying Older Masters</figcaption>
+<p><img data-src="assets/img/caravaggio-rubens.jpg"></p>
+<figcaption>The Entombment of Christ. On the left, Caravaggio’s original. On the right, Rubens’ versions. - <a href="https://www.sightsize.com/old-masters-copying-older-masters-part-1/">Old Masters Copying Older Masters</a></figcaption>
 </figure>
 </div>
 </div><div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://www.youtube.com/watch?v=X9RYuvPCQUA"><img data-src="assets/img/remix.png" alt="Everything is a remix"></a></p>
-<figcaption>Everything is a remix</figcaption>
+<p><img data-src="assets/img/remix.png"></p>
+<figcaption><a href="https://www.youtube.com/watch?v=X9RYuvPCQUA">Everything is a remix</a></figcaption>
 </figure>
 </div>
 </div></div>
@@ -2545,11 +2546,11 @@ Connecting seemingly unrelated concepts</p>
 <section class="slide level2">
 
 
-<img data-src="assets/img/carbon1.jpeg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/carbon1.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.cleanmetrics.com/blog/2020/07/04/case-study-meat-eaters-guide/">Carbon footprint</a></p></section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/carbon2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/carbon2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2020/2020-week08">Food consumption</a></p><aside class="notes">
 <p>Bars bend, 3d effect</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2574,7 +2575,7 @@ Social media</p>
 <section class="slide level2">
 
 
-<img data-src="assets/img/ggcirclepack.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/ggcirclepack.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2024/2024-week_30">American Idol</a>, <a href="https://github.com/EvaMaeRey/ggcirclepack">ggcirclepack</a></p><aside class="notes">
 <p>ggcirclepack</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2591,7 +2592,7 @@ Social media</p>
 <section id="look-into-charts-typically-used-in-other-fields" class="slide level2">
 <h2>Look into charts typically<br>used in other fields</h2>
 
-<img data-src="assets/img/ggsoccer.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/ggsoccer.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://torvaney.github.io/ggsoccer/">ggsoccer</a></p><aside class="notes">
 <p>Shift perspective</p>
 <p>Go through the packages at different CRAN Task Views and search for ggplot2 packages https://cran.r-project.org/web/views/</p>
 <style type="text/css">
@@ -2609,11 +2610,11 @@ Social media</p>
 <section class="slide level2">
 
 
-<img data-src="assets/img/anchor.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/anchor.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://datavizcatalogue.com/blog/japanese-contributions-to-data-visualisation/">Japanese Contributions to Data Visualisation</a></p></section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/bakeoff.jpeg" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/bakeoff.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_43">The Great British Bake off</a></p><aside class="notes">
 <p>Add the original on the left I saw a chart about opening and closing stock prices, minimum and maximum price</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2630,7 +2631,7 @@ Social media</p>
 <section id="sketch-before-coding" class="slide level2">
 <h2>Sketch before coding</h2>
 
-<img data-src="assets/img/sketch.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/sketch.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://eolay.tilda.ws/en">Natalia Kiseleva</a></p><aside class="notes">
 <p>Analog/Digital Spend 5-10 minutes to sketch out some ideas I get “locked” when I code</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2647,7 +2648,7 @@ Social media</p>
 <section id="break-the-rules" class="slide level2">
 <h2>Break the rules</h2>
 
-<img data-src="assets/img/babynames.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/babynames.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_12">Baby names</a></p><aside class="notes">
 <p>Deliberately try to break the rules</p>
 <p>I did it a lot in the beginning but not intentionally, I didn’t know the rules</p>
 <style type="text/css">
@@ -2669,14 +2670,14 @@ Social media</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="assets/img/danielle.png"></p>
-<figcaption>Danielle Navarro</figcaption>
+<figcaption><a href="https://djnavarro.net">Danielle Navarro</a></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:35%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="assets/img/valentina.jpg"></p>
-<figcaption>MeTooMentum by Valentina D’Efilippo</figcaption>
+<figcaption>MeTooMentum by <a href="http://www.valentinadefilippo.co.uk/">Valentina D’Efilippo</a></figcaption>
 </figure>
 </div>
 </div></div>
@@ -2688,13 +2689,14 @@ Social media</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="https://paezha.github.io/truchet/reference/figures/README-unnamed-chunk-14-1.png"></p>
-<figcaption>truchet R package</figcaption>
+<figcaption><a href="https://github.com/paezha/truchet">truchet</a></figcaption>
 </figure>
 </div>
 </div><div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="assets/img/dataart.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="assets/img/dataart.png"></p>
+<figcaption><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_41">Ravelry Yarn</a></figcaption>
 </figure>
 </div>
 </div></div>
@@ -2836,7 +2838,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section id="look-at-other-peoples-code" class="slide level2">
 <h2>Look at other people’s code</h2>
 
-<img data-src="assets/img/cedric.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/cedric.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/z3tt">Cédric Scherer</a></p><aside class="notes">
 <p>Common in the R community to share your code If you see something you like, look at the code</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2871,11 +2873,11 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section class="slide level2">
 
 
-<img data-src="assets/img/eurovision1.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/eurovision1.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://x.com/Eurovision/status/1525614683767595008">Eurovision Song Contest 2022 Scoreboard</a></p></section>
 <section class="slide level2">
 
 
-<img data-src="assets/img/eurovision2.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/eurovision2.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2022/2022-week_20">Eurovsion 2022 Results</a></p><aside class="notes">
 <p>Eurovision song contest scoreboard, as seen on TV</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2891,9 +2893,9 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 </section>
 <section class="slide level2">
 
-<p>Partly is the goal, partly the constraints</p>
+<p>Partly the goal, partly the constraints</p>
 
-<img data-src="assets/img/greeneggs.webp" class="r-stretch"></section>
+<img data-src="assets/img/greeneggs.webp" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://en.wikipedia.org/wiki/Green_Eggs_and_Ham">Green Eggs and Ham</a></p></section>
 <section id="try-to-break-things" class="slide level2">
 <h2>Try to break things</h2>
 <p>Try out different options in ggplot2 functions</p>
@@ -2918,7 +2920,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section id="use-geom_text" class="slide level2">
 <h2>Use <code>geom_text()</code></h2>
 
-<img data-src="assets/img/text.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/text.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week8">Employed Status</a></p><aside class="notes">
 <p>Text is direct, no need to look up symbols!</p>
 <p>geom_text usually for labels, use it for mapping variables: you can play with font size, color, fonts</p>
 <p>I like text visualizations and I think they’re underused</p>
@@ -2947,7 +2949,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section id="create-your-own-geoms" class="slide level2">
 <h2>Create your own geoms</h2>
 
-<img data-src="assets/img/spirals.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/spirals.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://ggplot2-book.org/ext-springs">ggplot2: Elegant Graphics for Data Analysis</a></p><aside class="notes">
 <p>If you want something more custom, you can code it. I’ve tried but never really succeeded, maybe you’ll have better luck</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2964,7 +2966,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section id="use-ggplot_buildlayer_data" class="slide level2">
 <h2>Use <del><code>ggplot_build()</code></del><code>layer_data()</code></h2>
 
-<img data-src="assets/img/swift.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/swift.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2023/2023-week_42">Taylor Swift</a></p><aside class="notes">
 <p>A technique that I’ve been using the last year or so</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2981,7 +2983,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section class="slide level2">
 
 
-<img data-src="assets/img/beeswarm.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/beeswarm.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/eclarke/ggbeeswarm">ggbeeswarm</a></p></section>
 <section class="slide level2">
 
 <p><code>layer_data(p, 1)</code></p>
@@ -3007,7 +3009,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 <section id="use-coord_radial" class="slide level2">
 <h2>Use <code>coord_radial()</code></h2>
 
-<img data-src="assets/img/portal.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="assets/img/outerspace.jpg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2024/2024-week_17">Objects Launched into Space</a></p></section>
 <section id="creative-use-of-geoms" class="slide level2">
 <h2>Creative use of geoms</h2>
 
@@ -3030,7 +3032,7 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 
 <p><code>geom_bspline_closed()</code> from ggforce</p>
 
-<img data-src="assets/img/xray.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/xray.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="http://ggforce.data-imaginist.com">ggforce</a></p><aside class="notes">
 <p>I don’t really know what the intended use for geom_bspline_closed() is, but I don’t think it’s for drawing penguins! :)</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -3056,7 +3058,12 @@ Test this or a similar prompt with your favorite LLM or <a href="https://www.bin
 </figure>
 </div>
 </div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="assets/img/picturethis.jpg"></p>
+<figcaption><a href="https://www.mollybang.com/Pages/picture.html">Picture this</a></figcaption>
+</figure>
+</div>
 </div></div>
 </section>
 <section id="participate-in-challenges" class="slide level2">
@@ -3066,7 +3073,7 @@ Experiment</p>
 <p>Learn</p>
 <p>Get feedback</p>
 
-<img data-src="assets/img/TidyTuesday.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/TidyTuesday.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/rfordatascience/tidytuesday/blob/master/README.md">TidyTuesday</a></p><aside class="notes">
 <p>Share online if you want to, low risk environment, R people are usually nice :)</p>
 <p>All my plots in this talk are from TidyTuesday submissions</p>
 <style type="text/css">
@@ -3152,7 +3159,7 @@ Different datasets</p>
 <h2>Don’t use the defaults<br>(colors, fonts, etc.)</h2>
 <p>Remember accessibility!</p>
 
-<img data-src="assets/img/metbrewer.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/metbrewer.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/BlakeRMills/MetBrewer">MetBrewer</a></p><aside class="notes">
 <p>You can go a long way just by not using the defaults</p>
 <p>Remember accessibility!</p>
 <style type="text/css">
@@ -3190,7 +3197,7 @@ Different datasets</p>
 <h2>When in doubt, subtract</h2>
 <p>Simplicity in design can be highly creative</p>
 
-<img data-src="assets/img/un.jpeg" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/un.jpeg" class="r-stretch quarto-figure-center"><p class="caption">(UN votes)[https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week12]</p><aside class="notes">
 <p>Sometimes when we are creative, we tend to overcomplicate things</p>
 <p>Instead subtract and go bold or not</p>
 <style type="text/css">
@@ -3295,7 +3302,7 @@ Different datasets</p>
 
 <p>Always give credit!</p>
 
-<img data-src="assets/img/benice.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/benice.png" class="r-stretch quarto-figure-center"><p class="caption">(Steal Like an Artist)[https://austinkleon.com/steal/]</p><aside class="notes">
 <p>Whenever you use something or get inspired by someone else on social media or maybe a comment in your code</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -3314,7 +3321,7 @@ Different datasets</p>
 <p>Just do it, creativity shouldn’t be the goal</p>
 <p>You can’t be creative all the time</p>
 
-<img data-src="assets/img/cringe.jpeg" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<img data-src="assets/img/cringe.jpeg" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gkaramanis/tidytuesday/tree/1f21ff67c8dd9fa25940f0e0d708e00eaf0df71b/2021/2021-week17">CEO Departures</a></p><aside class="notes">
 <p>And to contradict myself here, try to be creative if you want to but…</p>
 <p>I make not so creative plots most of time, sometimes even bad ones, like this disaster! :)</p>
 <p>But it’s okay</p>
@@ -3351,13 +3358,16 @@ Different datasets</p>
 </section>
 <section class="slide level2">
 
+</section>
+<section id="thank-you" class="slide level2 center">
+<h2>Thank you!</h2>
 
-<img data-src="assets/img/nopressure.png" class="quarto-figure quarto-figure-center r-stretch"><div class="quarto-auto-generated-content">
+<img data-src="assets/img/nopressure.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
-</div>
-</section></section>
+</div></section>
     </div>
   </div>
 
